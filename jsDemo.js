@@ -1,11 +1,11 @@
 const fs = require('fs')
 
-let dirName = process.argv[2] // 你传的参数是从第 2 个开始的
+let dirName = process.argv[2] 
 
-fs.mkdirSync("./" + dirName) // mkdir $1
-process.chdir("./" + dirName) // cd $1
-fs.mkdirSync('css') // mkdir css
-fs.mkdirSync('js') // mkdir js
+fs.mkdirSync("./" + dirName) 
+process.chdir("./" + dirName) 
+fs.mkdirSync('css')
+fs.mkdirSync('js')
 
 fs.writeFileSync("./index.html", 
 `<!DOCTYPE>
